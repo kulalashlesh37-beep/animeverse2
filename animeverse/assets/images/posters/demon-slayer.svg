@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EF4444" stop-opacity="0.25"/>
+        <stop offset="50%" stop-color="#12121B" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#08080D"/>
+      </linearGradient>
+      <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EF4444"/>
+        <stop offset="100%" stop-color="#10B981"/>
+      </linearGradient>
+      <filter id="sGlow">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- Background -->
+    <rect width="300" height="450" fill="#08080D"/>
+    <rect width="300" height="450" fill="url(#bgGrad)"/>
+    
+    <!-- Atmospheric Kanji Watermark -->
+    <text x="150" y="160" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="70" fill="#EF4444" opacity="0.12" text-anchor="middle">無限列車</text>
+    
+    <!-- Cyberpunk grid lines -->
+    <line x1="20" y1="40" x2="280" y2="40" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <line x1="20" y1="410" x2="280" y2="410" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <line x1="30" y1="30" x2="30" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <line x1="270" y1="30" x2="270" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+    <!-- Central Emblem / Artwork Symbol -->
+    <g filter="url(#sGlow)">
+      <circle cx="150" cy="210" r="55" stroke="#EF4444" stroke-width="4" fill="none"/><path d="M150 155 Q180 185 150 215 Q120 245 150 265" stroke="#10B981" stroke-width="5" fill="none"/><circle cx="150" cy="210" r="25" fill="#EF4444" opacity="0.4"/>
+    </g>
+
+    <!-- Top Badges -->
+    <rect x="25" y="20" width="70" height="20" rx="4" fill="rgba(168,85,247,0.2)" stroke="#10B981" stroke-width="1"/>
+    <text x="60" y="34" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">2019-2024</text>
+
+    <rect x="210" y="20" width="65" height="20" rx="4" fill="rgba(245,158,11,0.2)" stroke="#F59E0B" stroke-width="1"/>
+    <text x="242" y="34" font-family="sans-serif" font-size="10" font-weight="700" fill="#FBBF24" text-anchor="middle">★ 8.79</text>
+
+    <!-- Japanese Subtitle -->
+    <text x="150" y="335" font-family="'Noto Sans JP', sans-serif" font-weight="600" font-size="12" fill="#10B981" text-anchor="middle" letter-spacing="4">鬼滅の刃</text>
+
+    <!-- Title -->
+    <text x="150" y="365" font-family="'Syne', 'Inter', sans-serif" font-weight="900" font-size="19" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">DEMON SLAYER</text>
+
+    <!-- Tagline / Genre -->
+    <text x="150" y="390" font-family="sans-serif" font-size="10" font-weight="700" fill="#94A3B8" text-anchor="middle" letter-spacing="2">ACTION & SUPERNATURAL</text>
+
+    <!-- Border highlight -->
+    <rect x="0.5" y="0.5" width="299" height="449" rx="8" stroke="rgba(168,85,247,0.3)" stroke-width="1" fill="none"/>
+  </svg>

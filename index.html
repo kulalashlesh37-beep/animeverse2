@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIMEVERSE — Enter A World Beyond Reality | Premium Anime Discovery</title>
+  <meta name="description" content="Discover trending anime, seasonal simulcasts, character profiles, and curated recommendations on AnimeVerse. Official streaming links powered by Crunchyroll.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="AnimeVerse Home">
+        <div class="brand-symbol">AV</div>
+        <div class="brand-text">
+          <span class="brand-name">ANIMEVERSE</span>
+          <span class="brand-sub">アニメの宇宙</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="new-releases.html" class="nav-link">New Releases</a>
+        <a href="genres.html" class="nav-link">Genres</a>
+        <a href="movies.html" class="nav-link">Movies</a>
+        <a href="seasons.html" class="nav-link">Seasons</a>
+        <a href="characters.html" class="nav-link">Characters</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-search-wrap">
+          <div class="header-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Search anime..." aria-label="Search anime">
+          </div>
+          <div class="search-results-dropdown"></div>
+        </div>
+
+        <a href="watchlist.html" class="btn-watchlist-shortcut" title="My Watchlist">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Watchlist</span>
+          <span class="watchlist-count-badge watchlist-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn-telegram" title="Join Telegram Community">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+          <span>JOIN TELEGRAM</span>
+        </a>
+
+        <div class="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="explore.html">Explore Anime</a></li>
+      <li><a href="trending.html">Trending</a></li>
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="seasons.html">Seasons</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="watchlist.html">My Watchlist</a></li>
+      <li><a href="about.html">About AnimeVerse</a></li>
+    </ul>
+    <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+      Join Telegram Community
+    </a>
+  </div>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <!-- MASTER DASHBOARD GRID (Exact Layout Composition of User Reference Image 1) -->
+      <div class="dashboard-grid">
+
+        <!-- LEFT COLUMN: HERO + TRENDING NOW + BROWSE BY GENRE -->
+        <div class="dashboard-main">
+
+          <!-- 1. FEATURED ANIME HERO BANNER -->
+          <div class="hero-card">
+            <img id="hero-bg-img" class="hero-bg" src="assets/images/solo-levelingbanner.jpg" alt="Featured Anime Backdrop">
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+              <div class="hero-featured-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>FEATURED ANIME</span>
+              </div>
+              
+              <h1 id="hero-title" class="hero-title">SOLO LEVELING</h1>
+              
+              <p id="hero-desc" class="hero-description">
+                In a world where Hunters—human warriors who possess supernatural abilities—must battle deadly monsters to protect humanity, the weakest hunter Sung Jinwoo discovers a hidden power that changes everything.
+              </p>
+
+              <div class="hero-meta-row">
+                <span id="hero-rating" class="badge badge-rating">★ 4.8</span>
+                <span id="hero-year" class="badge badge-year">2024</span>
+                <div id="hero-genres" style="display: inline-flex; gap: 0.4rem;">
+                  <span class="badge badge-genre">Action</span>
+                  <span class="badge badge-genre">Adventure</span>
+                  <span class="badge badge-genre">Fantasy</span>
+                </div>
+              </div>
+
+              <div class="hero-btn-group">
+                <a id="hero-btn-explore" href="anime-details.html?id=solo-leveling" class="btn btn-primary">
+                  <span>EXPLORE ANIME</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+                <a id="hero-btn-watch" href="watch.html?id=solo-leveling" class="btn btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>FIND WHERE TO WATCH</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Slide Navigation Controls -->
+            <div class="hero-controls">
+              <button id="hero-prev-btn" class="btn-icon" aria-label="Previous Slide">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <div class="hero-dots">
+                <div class="hero-dot active"></div>
+                <div class="hero-dot"></div>
+                <div class="hero-dot"></div>
+                <div class="hero-dot"></div>
+              </div>
+              <button id="hero-next-btn" class="btn-icon" aria-label="Next Slide">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- COOL LIVE PLATFORM STATS BAR -->
+          <div class="live-stats-bar" style="margin-top: 1.75rem; margin-bottom: 1.5rem;">
+            <div class="live-stat-item">
+              <strong>41</strong>
+              <span>Curated Anime Titles</span>
+            </div>
+            <div class="live-stat-item">
+              <strong>40</strong>
+              <span>Legendary Heroes in Vault</span>
+            </div>
+            <div class="live-stat-item">
+              <strong>1,280+</strong>
+              <span>Episodes & Run times</span>
+            </div>
+            <div class="live-stat-item">
+              <span class="live-pulse-dot"></span>
+              <span>4.8k Fans in <a href="https://t.me/animeverszz" target="_blank" style="color: var(--accent-cyan); text-decoration: underline; font-weight: 700;">Telegram</a></span>
+            </div>
+          </div>
+
+          <!-- 2. TRENDING NOW SECTION -->
+          <div class="anime-carousel-container">
+            <div class="section-header">
+              <div class="section-title-wrap">
+                <div class="section-indicator"></div>
+                <h2 class="section-title">
+                  TRENDING NOW
+                  <span class="jp-tag">今期話題作</span>
+                </h2>
+              </div>
+              <div class="section-actions">
+                <button id="btn-trending-prev" class="btn-icon" aria-label="Scroll left" style="width: 32px; height: 32px;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button id="btn-trending-next" class="btn-icon" aria-label="Scroll right" style="width: 32px; height: 32px;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <a href="trending.html" class="view-all-link">
+                  <span>VIEW ALL</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <div id="home-trending-scroll" class="carousel-scroll-wrap">
+              <!-- Populated dynamically by script.js with cards 1 to 6 -->
+            </div>
+          </div>
+
+          <!-- 3. BROWSE BY GENRE TILES -->
+          <div>
+            <div class="section-header">
+              <div class="section-title-wrap">
+                <div class="section-indicator"></div>
+                <h2 class="section-title">
+                  BROWSE BY GENRE
+                  <span class="jp-tag">ジャンル別</span>
+                </h2>
+              </div>
+              <a href="genres.html" class="view-all-link">
+                <span>ALL GENRES</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+
+            <div class="genres-grid">
+              <a href="explore.html?genre=Action" class="genre-tile">
+                <div class="genre-icon-wrap">⚔️</div>
+                <span class="genre-name">ACTION</span>
+              </a>
+              <a href="explore.html?genre=Adventure" class="genre-tile">
+                <div class="genre-icon-wrap">🧭</div>
+                <span class="genre-name">ADVENTURE</span>
+              </a>
+              <a href="explore.html?genre=Fantasy" class="genre-tile">
+                <div class="genre-icon-wrap">🔮</div>
+                <span class="genre-name">FANTASY</span>
+              </a>
+              <a href="explore.html?genre=Romance" class="genre-tile">
+                <div class="genre-icon-wrap">💖</div>
+                <span class="genre-name">ROMANCE</span>
+              </a>
+              <a href="explore.html?genre=Thriller" class="genre-tile">
+                <div class="genre-icon-wrap">💀</div>
+                <span class="genre-name">THRILLER</span>
+              </a>
+              <a href="explore.html?genre=Comedy" class="genre-tile">
+                <div class="genre-icon-wrap">😄</div>
+                <span class="genre-name">COMEDY</span>
+              </a>
+              <a href="explore.html?genre=Sci-Fi" class="genre-tile">
+                <div class="genre-icon-wrap">🪐</div>
+                <span class="genre-name">SCI-FI</span>
+              </a>
+              <a href="explore.html?genre=Drama" class="genre-tile">
+                <div class="genre-icon-wrap">🎭</div>
+                <span class="genre-name">DRAMA</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. HALL OF FAME: ALL-TIME MASTERPIECES -->
+          <div style="margin-top: 0.5rem;">
+            <div class="section-header">
+              <div class="section-title-wrap">
+                <div class="section-indicator"></div>
+                <h2 class="section-title">
+                  HALL OF FAME: ALL-TIME LEGENDS
+                  <span class="jp-tag">殿堂入り傑作</span>
+                </h2>
+              </div>
+              <a href="explore.html?sort=rating" class="view-all-link">
+                <span>VIEW TOP RATED</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+
+            <div class="hall-grid">
+              <!-- Fullmetal Alchemist: Brotherhood -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/fullmetal-alchemist-brotherhood.jpg" alt="Fullmetal Alchemist: Brotherhood" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/black-clover.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">#1 ALL TIME</span>
+                  <span class="hall-rating-badge">★ 9.10</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Fullmetal Alchemist: Brotherhood</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2009</span>
+                    <span class="hall-meta-pill">64 Eps</span>
+                    <span class="hall-meta-pill">Bones</span>
+                  </div>
+                  <p class="hall-desc">Two brothers embark on an alchemical odyssey to restore their broken bodies after a forbidden transmutation.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('fullmetal-alchemist-brotherhood')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%20Brotherhood" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hunter x Hunter -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/hunter-x-hunter.jpg" alt="Hunter x Hunter (2011)" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/solo-leveling.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">#2 APEX</span>
+                  <span class="hall-rating-badge">★ 9.04</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Hunter x Hunter (2011)</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2011</span>
+                    <span class="hall-meta-pill">148 Eps</span>
+                    <span class="hall-meta-pill">Madhouse</span>
+                  </div>
+                  <p class="hall-desc">Gon Freecss takes the lethal Hunter exam to find his elusive father, discovering the boundless power of Nen.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('hunter-x-hunter')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bleach: Thousand-Year Blood War -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/bleach-tybw.jpg" alt="Bleach: Thousand-Year Blood War" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/demon-slayer.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">#3 BANKAI</span>
+                  <span class="hall-rating-badge">★ 9.01</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Bleach: Thousand-Year Blood War</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2022</span>
+                    <span class="hall-meta-pill">26 Eps</span>
+                    <span class="hall-meta-pill">Pierrot</span>
+                  </div>
+                  <p class="hall-desc">The millennium-long war between Soul Reapers and Quincy erupts as Yhwach marches upon the Soul Society.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('bleach-tybw')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Bleach%20Thousand%20Year%20Blood%20War" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Steins;Gate -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/steins-gate.jpg" alt="Steins;Gate" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/steins-gate.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">#1 SCI-FI</span>
+                  <span class="hall-rating-badge">★ 9.07</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Steins;Gate</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2011</span>
+                    <span class="hall-meta-pill">24 Eps</span>
+                    <span class="hall-meta-pill">White Fox</span>
+                  </div>
+                  <p class="hall-desc">Self-proclaimed mad scientist Rintaro Okabe accidentally discovers phone microwave time travel across worldlines.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('steins-gate')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Steins%20Gate" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vinland Saga -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/vinland-saga.jpg" alt="Vinland Saga" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/attack-on-titan.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">EPIC SEINEN</span>
+                  <span class="hall-rating-badge">★ 8.88</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Vinland Saga</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2019</span>
+                    <span class="hall-meta-pill">48 Eps</span>
+                    <span class="hall-meta-pill">MAPPA</span>
+                  </div>
+                  <p class="hall-desc">Thorfinn pursues vengeance across bloodstained Viking battlefields, seeking the mythical peace of Vinland.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('vinland-saga')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Vinland%20Saga" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cyberpunk: Edgerunners -->
+              <div class="hall-card">
+                <div class="hall-poster-wrap">
+                  <img src="assets/images/web/cyberpunk-edgerunners.jpg" alt="Cyberpunk: Edgerunners" class="hall-poster-img" onerror="this.onerror=null; this.src='assets/images/posters/chainsaw-man.svg'">
+                  <div class="hall-poster-overlay"></div>
+                  <span class="hall-rank-badge">CYBER TRIGGER</span>
+                  <span class="hall-rating-badge">★ 8.60</span>
+                </div>
+                <div class="hall-body">
+                  <h3 class="hall-title">Cyberpunk: Edgerunners</h3>
+                  <div class="hall-meta-row">
+                    <span class="hall-meta-pill">2022</span>
+                    <span class="hall-meta-pill">10 Eps</span>
+                    <span class="hall-meta-pill">Studio Trigger</span>
+                  </div>
+                  <p class="hall-desc">A street kid in futuristic Night City risks cyberpsychosis to carve his legend alongside netrunner Lucy.</p>
+                  <div class="hall-actions">
+                    <button class="hall-btn-preview" onclick="openQuickPreview('cyberpunk-edgerunners')">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span>PREVIEW</span>
+                    </button>
+                    <a href="https://www.crunchyroll.com/search?q=Cyberpunk%20Edgerunners" target="_blank" rel="noopener noreferrer" class="hall-btn-watch" title="Stream on Crunchyroll">
+                      <span>CRUNCHYROLL ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. NEURAL ANIME QUOTE VAULT -->
+          <div class="quote-terminal-box" style="margin-top: 1rem;">
+            <div class="quote-top-bar">
+              <div class="quote-term-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>NEURAL VOICE TRANSMISSION • QUOTE VAULT</span>
+              </div>
+              <div class="equalizer-bars">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="quote-content-flex">
+              <img id="daily-quote-avatar" src="assets/images/web/char-asta.jpg" alt="Asta" class="quote-char-avatar" onerror="this.onerror=null; this.src='assets/images/characters/asta.svg'">
+              <div class="quote-text-wrap">
+                <div id="daily-quote-text" class="quote-text">"My magic is never giving up! I will shatter every destiny and become the next Wizard King!"</div>
+                <div id="daily-quote-jp" class="quote-jp-sub">「諦めないのがオレの魔法だ！」</div>
+                <div id="daily-quote-author" class="quote-author">— ASTA • BLACK CLOVER (SPADE KINGDOM RAID ARC)</div>
+              </div>
+            </div>
+
+            <div class="quote-actions-row">
+              <button id="btn-next-quote" class="btn-quote-cycle" onclick="cycleAnimeQuote()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                <span>🎲 TRANSMIT NEXT QUOTE</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: QUICK LINKS + COMMUNITY + TOP GENRES -->
+        <aside class="dashboard-sidebar">
+          <!-- Quick Links Panel -->
+          <div class="sidebar-panel">
+            <h3 class="sidebar-panel-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              QUICK LINKS
+            </h3>
+            <ul class="quick-links-list">
+              <li class="quick-link-item"><a href="trending.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> Trending Now</a></li>
+              <li class="quick-link-item"><a href="new-releases.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> New Releases</a></li>
+              <li class="quick-link-item"><a href="movies.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg> Anime Movies</a></li>
+              <li class="quick-link-item"><a href="genres.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg> Browse by Genres</a></li>
+              <li class="quick-link-item"><a href="seasons.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Seasonal Anime</a></li>
+              <li class="quick-link-item"><a href="characters.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Character Vault</a></li>
+            </ul>
+          </div>
+
+          <!-- Join Community Card -->
+          <div class="community-card">
+            <img class="community-card-bg" src="assets/images/characters/sukuna.svg" alt="Anime Community">
+            <div class="community-tag">JOIN THE ANIMEVERSE</div>
+            <h4 class="community-headline">COMMUNITY</h4>
+            <p class="community-desc">
+              Discover anime, share recommendations, and connect with fellow fans.
+            </p>
+            <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn-telegram" style="width: 100%; justify-content: center;">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+              <span>JOIN TELEGRAM</span>
+            </a>
+            <span class="community-link-handle">t.me/animeverszz</span>
+          </div>
+
+          <!-- Top Genres Stats -->
+          <div class="sidebar-panel">
+            <h3 class="sidebar-panel-title">TOP GENRES</h3>
+            <div class="genre-meter-list">
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Action</span><span>35%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 35%;"></div></div>
+              </div>
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Adventure</span><span>25%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 25%;"></div></div>
+              </div>
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Fantasy</span><span>20%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 20%;"></div></div>
+              </div>
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Romance</span><span>10%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 10%;"></div></div>
+              </div>
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Sci-Fi</span><span>5%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 5%;"></div></div>
+              </div>
+              <div class="genre-meter-item">
+                <div class="genre-meter-label"><span>Comedy</span><span>5%</span></div>
+                <div class="genre-progress-bar"><div class="genre-progress-fill" style="width: 5%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Simulcast Schedule Radar -->
+          <div class="sidebar-panel">
+            <h3 class="sidebar-panel-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              SIMULCAST RADAR
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <div class="simulcast-item" onclick="setSimulcastAlert('Demon Slayer: Hashira Training')">
+                <span class="simulcast-day">MON</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">Demon Slayer: Hashira</div>
+                  <div class="simulcast-ep">Ep 8 Finale • Ufotable</div>
+                </div>
+                <span class="simulcast-badge badge-aired">AIRED</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('Black Clover Season 2: Spade Kingdom')">
+                <span class="simulcast-day" style="color: #10B981;">TUE</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name" style="color: #10B981;">Black Clover S2</div>
+                  <div class="simulcast-ep">Ep 172 Devil Union • Pierrot</div>
+                </div>
+                <span class="simulcast-badge badge-today">TODAY</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('Solo Leveling: Arise')">
+                <span class="simulcast-day">WED</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">Solo Leveling</div>
+                  <div class="simulcast-ep">Ep 12 Shadow Monarch • A-1</div>
+                </div>
+                <span class="simulcast-badge badge-tomorrow">TOMORROW</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('Kaiju No. 8')">
+                <span class="simulcast-day">THU</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">Kaiju No. 8</div>
+                  <div class="simulcast-ep">Ep 10 Defense Force • I.G</div>
+                </div>
+                <span class="simulcast-badge badge-upcoming">23:00 JST</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('Frieren: Beyond Journey\'s End')">
+                <span class="simulcast-day">FRI</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">Frieren: Journey's End</div>
+                  <div class="simulcast-ep">Ep 28 First Class Mage • Madhouse</div>
+                </div>
+                <span class="simulcast-badge badge-upcoming">23:30 JST</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('One Piece: Egghead Island')">
+                <span class="simulcast-day">SAT</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">One Piece: Egghead</div>
+                  <div class="simulcast-ep">Ep 1115 Gear 5 Climax • Toei</div>
+                </div>
+                <span class="simulcast-badge badge-upcoming">09:30 JST</span>
+              </div>
+
+              <div class="simulcast-item" onclick="setSimulcastAlert('My Hero Academia: Season 7')">
+                <span class="simulcast-day">SUN</span>
+                <div class="simulcast-info">
+                  <div class="simulcast-name">My Hero Academia S7</div>
+                  <div class="simulcast-ep">Ep 9 Final War • Bones</div>
+                </div>
+                <span class="simulcast-badge badge-upcoming">17:30 JST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Battle Arena (Live Poll) -->
+          <div class="battle-arena-card">
+            <h3 class="sidebar-panel-title" style="color: #EF4444; margin-bottom: 0.6rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              FAN CLASH ARENA
+            </h3>
+            <div style="font-size: 0.725rem; color: var(--text-muted); margin-bottom: 0.75rem; text-align: center;">
+              WHO WINS IN A FULL POWER CLASH?
+            </div>
+
+            <div class="battle-fighters-row">
+              <div class="battle-fighter fighter-a">
+                <img src="assets/images/web/char-asta.jpg" alt="Asta" class="battle-fighter-img" onerror="this.onerror=null; this.src='assets/images/characters/asta.svg'">
+                <div class="battle-fighter-name">ASTA</div>
+                <div style="font-size: 0.65rem; color: var(--accent-purple);">DEVIL UNION</div>
+              </div>
+
+              <div class="battle-vs-badge">VS</div>
+
+              <div class="battle-fighter fighter-b">
+                <img src="assets/images/web/char-sukuna.jpg" alt="Sukuna" class="battle-fighter-img" onerror="this.onerror=null; this.src='assets/images/characters/sukuna.svg'">
+                <div class="battle-fighter-name">SUKUNA</div>
+                <div style="font-size: 0.65rem; color: #EF4444;">20 FINGERS</div>
+              </div>
+            </div>
+
+            <div class="battle-meter-track">
+              <div id="battle-fill-a" class="battle-fill-a" style="width: 53%;"></div>
+            </div>
+
+            <div class="battle-labels-row">
+              <span id="battle-pct-a" style="color: var(--accent-purple);">ASTA: 53%</span>
+              <span id="battle-pct-b" style="color: #EF4444;">SUKUNA: 47%</span>
+            </div>
+
+            <div class="battle-btns-row">
+              <button class="btn-battle-vote btn-vote-a" onclick="voteFanBattle('asta')">VOTE ASTA</button>
+              <button class="btn-battle-vote btn-vote-b" onclick="voteFanBattle('sukuna')">VOTE SUKUNA</button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- GRAND CINEMATIC BANNER: BLACK CLOVER SEASON 2 (SPADE KINGDOM RAID SAGA) -->
+      <section class="season2-banner-section" style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
+        <div class="season2-banner-card">
+          <img class="season2-banner-bg" src="assets/images/banners/black clover.avif" alt="Black Clover Season 2 Spade Kingdom Raid Arc">
+          <div class="season2-banner-overlay"></div>
+          
+          <div class="season2-banner-content">
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap;">
+              <span class="badge badge-featured" style="background: linear-gradient(135deg, var(--accent-purple), var(--neon-violet)); color: #FFFFFF; font-weight: 800; font-size: 0.75rem; letter-spacing: 1px; padding: 0.35rem 0.75rem;">
+                ★ SPECIAL SIMULCAST PREMIERE
+              </span>
+              <span class="badge badge-rating" style="padding: 0.35rem 0.7rem; font-size: 0.75rem;">★ 9.15 RATING</span>
+              <span class="badge badge-genre" style="padding: 0.35rem 0.7rem; font-size: 0.75rem;">EPISODES 171+ (NEW BROADCAST)</span>
+              <span class="badge badge-year" style="padding: 0.35rem 0.7rem; font-size: 0.75rem;">STUDIO PIERROT</span>
+            </div>
+
+            <div style="font-family: var(--font-jp); font-size: 0.95rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 3px; margin-bottom: 0.35rem;">
+              ブラッククローバー 第2期 • 限界突破の先へ (スペード王国攻略編)
+            </div>
+
+            <h2 class="season2-banner-title">
+              BLACK CLOVER: SEASON 2
+              <span style="display: block; font-size: 1.5rem; color: var(--accent-purple); font-weight: 800; margin-top: 0.2rem;">
+                SPADE KINGDOM RAID & DEVIL UNION SAGA
+              </span>
+            </h2>
+
+            <p class="season2-banner-desc">
+              The war for the continent begins. Surpass your limits once more as Asta achieves complete Devil Union with Liebe to rescue Captain Yami from the Dark Triad and seal the gates of the underworld before the advent of the Supreme Devils.
+            </p>
+
+            <!-- Interactive Episode Archive Switcher -->
+            <div style="margin-top: 1.25rem; margin-bottom: 1.5rem;">
+              <div style="font-size: 0.725rem; font-weight: 800; color: var(--accent-purple); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span class="live-pulse-dot"></span>
+                <span>SEASON 2 EPISODES ARCHIVE (CLICK TO PREVIEW):</span>
+              </div>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <button class="wl-tab active bc2-ep-btn" data-ep="171" data-desc="The elite Magic Knights infiltration squad penetrates the demonic barrier surrounding the Spade Kingdom capital.">Ep 171: Spade Assault</button>
+                <button class="wl-tab bc2-ep-btn" data-ep="172" data-desc="Asta arrives at the royal citadel in complete Devil Union, slicing through the first wave of underworld abominations.">Ep 172: Devil Union</button>
+                <button class="wl-tab bc2-ep-btn" data-ep="173" data-desc="Noelle unleashes the Saint Valkyrie Dress with Undine, avenging her mother against the Supreme Devil Megicula.">Ep 173: Saint Valkyrie</button>
+                <button class="wl-tab bc2-ep-btn" data-ep="174" data-desc="Yuno reveals his dual-grimoire heritage, summoning celestial Star Magic conjunctions in the throne room.">Ep 174: Star Magic</button>
+                <button class="wl-tab bc2-ep-btn" data-ep="175" data-desc="The lowest gate of Qliphoth begins to open as the supreme sovereign of gravity Lucifero manifests.">Ep 175: Lucifero Gate</button>
+              </div>
+              <div id="bc2-ep-preview-box" style="font-size: 0.825rem; color: var(--accent-cyan); margin-top: 0.6rem; font-style: italic; background: rgba(6,182,212,0.08); padding: 0.5rem 0.85rem; border-radius: var(--radius-sm); border-left: 2px solid var(--accent-cyan);">
+                Ep 171: The elite Magic Knights infiltration squad penetrates the demonic barrier surrounding the Spade Kingdom capital.
+              </div>
+            </div>
+
+            <div class="season2-banner-btn-group">
+              <a href="https://www.crunchyroll.com/search?q=Black%20Clover" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.75rem 1.4rem;">
+                <span>STREAM SEASON 2 ON CRUNCHYROLL ↗</span>
+              </a>
+              <a href="watch.html?id=black-clover-season-2" class="btn btn-secondary" style="padding: 0.75rem 1.4rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>WATCH HUB & EPISODES</span>
+              </a>
+              <a href="anime-details.html?id=black-clover-season-2" class="btn btn-secondary" style="padding: 0.75rem 1.4rem;">
+                <span>EXPLORE SEASON 2 DETAILS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: ANIME SPOTLIGHT (BLACK CLOVER SPLIT LAYOUT) -->
+      <section class="spotlight-section">
+        <div class="spotlight-card">
+          <div class="spotlight-content">
+            <div class="spotlight-tag">ANIME SPOTLIGHT</div>
+            <h2 class="spotlight-title">BLACK CLOVER</h2>
+            <div class="spotlight-jp">ブラッククローバー • 限界突破</div>
+            <p class="spotlight-desc">
+              In a magical realm where power dictates social standing, Asta is born without a spark of mana. By forging an iron spirit and wielding a demonic five-leaf grimoire, he joins the unruly Black Bulls to surpass every limit and become the next Wizard King.
+            </p>
+            <div class="spotlight-meta">
+              <span class="badge badge-rating">★ 8.15 MAL</span>
+              <span class="badge badge-featured">170 Verified Episodes</span>
+              <span class="badge badge-year">Studio Pierrot</span>
+              <span class="badge badge-genre">Action & Fantasy</span>
+            </div>
+            <div class="spotlight-btns">
+              <a href="anime-details.html?id=black-clover" class="btn btn-primary">
+                <span>EXPLORE BLACK CLOVER</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <a href="watch.html?id=black-clover" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>WATCH HUB</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="spotlight-visual">
+            <img class="spotlight-img" src="assets/images/banners/black clover.jpg" alt="Black Clover Spotlight">
+            <div class="spotlight-visual-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: CONTINUE DISCOVERING -->
+      <section style="margin-top: 3rem; margin-bottom: 2rem;">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <div class="section-indicator"></div>
+            <h2 class="section-title">
+              CONTINUE DISCOVERING
+              <span class="jp-tag">おすすめ作品</span>
+            </h2>
+          </div>
+          <a href="explore.html" class="view-all-link">
+            <span>EXPLORE ALL</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div id="home-discover-grid" class="anime-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-symbol">AV</div>
+            <div class="brand-text">
+              <span class="brand-name">ANIMEVERSE</span>
+              <span class="brand-sub">アニメの宇宙</span>
+            </div>
+          </a>
+          <p class="footer-tagline">ENTER A WORLD BEYOND REALITY.</p>
+          <p class="footer-desc">
+            AnimeVerse is a premium anime discovery platform and entertainment directory designed for anime enthusiasts worldwide. Connecting fans to verified legal streaming providers.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram Community">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+            </a>
+            <a href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Crunchyroll Official Streaming">
+              <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6" fill="#08080D"></circle><circle cx="14" cy="10" r="2" fill="#F47521"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Catalog</a></li>
+            <li><a href="trending.html">Trending Anime</a></li>
+            <li><a href="new-releases.html">New Releases</a></li>
+            <li><a href="characters.html">Character Profiles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="genres.html">Browse Genres</a></li>
+            <li><a href="seasons.html">Seasonal Guide</a></li>
+            <li><a href="movies.html">Anime Movies</a></li>
+            <li><a href="watch.html">Watch Hub</a></li>
+            <li><a href="watchlist.html">My Watchlist</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">COMMUNITY & LEGAL</h4>
+          <p class="footer-desc" style="margin-bottom: 0.8rem;">
+            Join our vibrant Telegram community of anime lovers.
+          </p>
+          <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn-telegram" style="margin-bottom: 1rem;">
+            <span>JOIN TELEGRAM</span>
+          </a>
+          <ul class="footer-links-list" style="font-size: 0.775rem;">
+            <li><a href="about.html">About AnimeVerse</a></li>
+            <li><a href="about.html#legal">Legal & DMCA Disclaimer</a></li>
+            <li><a href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer">Official Crunchyroll Streaming</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024 AnimeVerse. All rights reserved. Enter A World Beyond Reality.</div>
+        <div>AnimeVerse does not host or pirate video files. All streams link to verified official platforms.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

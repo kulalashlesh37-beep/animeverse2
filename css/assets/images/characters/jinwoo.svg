@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700">
+    <defs>
+      <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+        <stop offset="50%" stop-color="#12121B" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#08080D"/>
+      </linearGradient>
+      <radialGradient id="aura" cx="50%" cy="35%" r="60%">
+        <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#08080D" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="500" height="700" fill="#08080D"/>
+    <rect width="500" height="700" fill="url(#cGrad)"/>
+    <circle cx="250" cy="280" r="180" fill="url(#aura)"/>
+
+    <!-- Japanese Calligraphy Watermark -->
+    <text x="250" y="240" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="120" fill="#8B5CF6" opacity="0.15" text-anchor="middle">起きろ</text>
+
+    <!-- Stylized Silhouette Body -->
+    <path d="M170 380 Q250 340 330 380 L350 700 L150 700 Z" fill="#181824"/>
+    <circle cx="250" cy="270" r="75" fill="#222234" stroke="#8B5CF6" stroke-width="3"/>
+    <!-- Glowing Eye Accents -->
+    <ellipse cx="230" cy="265" rx="12" ry="4" fill="#8B5CF6"/>
+    <ellipse cx="270" cy="265" rx="12" ry="4" fill="#8B5CF6"/>
+    <circle cx="230" cy="265" r="3" fill="#FFFFFF"/>
+    <circle cx="270" cy="265" r="3" fill="#FFFFFF"/>
+
+    <!-- Bottom Vignette -->
+    <rect y="480" width="500" height="220" fill="url(#vignette)"/>
+
+    <!-- Japanese Name Subtitle -->
+    <text x="250" y="550" font-family="'Noto Sans JP', sans-serif" font-weight="700" font-size="18" fill="#8B5CF6" text-anchor="middle" letter-spacing="6">ソン・ジヌ</text>
+
+    <!-- Character Name -->
+    <text x="250" y="590" font-family="'Syne', 'Inter', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">SUNG JINWOO</text>
+
+    <!-- Subtitle -->
+    <text x="250" y="620" font-family="sans-serif" font-weight="700" font-size="12" fill="#94A3B8" text-anchor="middle" letter-spacing="3">SHADOW MONARCH</text>
+
+    <!-- Frame border -->
+    <rect x="0.5" y="0.5" width="499" height="699" rx="12" fill="none" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  </svg>

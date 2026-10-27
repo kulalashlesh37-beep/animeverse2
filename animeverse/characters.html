@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Vault & Profiles — Ryomen Sukuna, Asta, Sung Jinwoo | ANIMEVERSE</title>
+  <meta name="description" content="Explore in-depth character profiles, combat stats, personality breakdowns, and iconic anime scenes on AnimeVerse.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="AnimeVerse Home">
+        <div class="brand-symbol">AV</div>
+        <div class="brand-text">
+          <span class="brand-name">ANIMEVERSE</span>
+          <span class="brand-sub">アニメの宇宙</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="new-releases.html" class="nav-link">New Releases</a>
+        <a href="genres.html" class="nav-link">Genres</a>
+        <a href="movies.html" class="nav-link">Movies</a>
+        <a href="seasons.html" class="nav-link">Seasons</a>
+        <a href="characters.html" class="nav-link active">Characters</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-search-wrap">
+          <div class="header-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Search anime..." aria-label="Search anime">
+          </div>
+          <div class="search-results-dropdown"></div>
+        </div>
+
+        <a href="watchlist.html" class="btn-watchlist-shortcut" title="My Watchlist">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Watchlist</span>
+          <span class="watchlist-count-badge watchlist-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn-telegram" title="Join Telegram Community">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+          <span>JOIN TELEGRAM</span>
+        </a>
+
+        <div class="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore Anime</a></li>
+      <li><a href="trending.html">Trending</a></li>
+      <li><a href="new-releases.html">New Releases</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="seasons.html">Seasons</a></li>
+      <li><a href="characters.html" class="active">Characters</a></li>
+      <li><a href="watchlist.html">My Watchlist</a></li>
+      <li><a href="about.html">About AnimeVerse</a></li>
+    </ul>
+    <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+      Join Telegram Community
+    </a>
+  </div>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <!-- Breadcrumbs & Heading -->
+      <div style="margin-bottom: 2rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span style="color: var(--accent-purple);">Character Profiles</span>
+        </div>
+        <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: #FFFFFF;">
+          ICONIC CHARACTER VAULT
+        </h1>
+        <p style="color: var(--text-secondary); max-width: 600px;">
+          Deep dive into the legends of anime. Explore combat ratings, cursed energy, magical attributes, and pivotal battle moments.
+        </p>
+      </div>
+
+      <!-- Character Selector Pills -->
+      <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+        <button class="wl-tab active" data-char-select="sukuna">Ryomen Sukuna</button>
+        <button class="wl-tab" data-char-select="asta">Asta (Black Clover)</button>
+        <button class="wl-tab" data-char-select="jinwoo">Sung Jinwoo (Solo Leveling)</button>
+        <button class="wl-tab" data-char-select="gojo">Satoru Gojo</button>
+      </div>
+
+      <!-- High-Impact Editorial Spotlight Layout (User Reference Image 2 Style) -->
+      <section class="character-spotlight-editorial">
+        <div class="char-editorial-grid">
+          
+          <!-- Character Artwork & Halo -->
+          <div class="char-editorial-visual">
+            <div class="char-editorial-bg-circle"></div>
+            <img id="char-hero-img" class="char-editorial-img" src="assets/images/characters/sukuna.jpg" alt="Ryomen Sukuna">
+          </div>
+
+          <!-- Editorial Details & Stats -->
+          <div>
+            <div id="char-hero-jp" class="char-kanji-sub">両面宿儺 (ライオメンスクナ)</div>
+            <h2 id="char-hero-name" class="char-brush-title">RYOMEN SUKUNA</h2>
+            <div id="char-hero-anime" style="font-size: 0.9rem; font-weight: 700; color: var(--accent-purple); letter-spacing: 1.5px; margin-bottom: 0.8rem; text-transform: uppercase;">
+              KING OF ALL CURSES • JUJUTSU KAISEN
+            </div>
+
+            <blockquote id="char-hero-quote" style="font-style: italic; color: var(--accent-cyan); font-size: 1.1rem; margin-bottom: 1.25rem; border-left: 3px solid var(--accent-cyan); padding-left: 1rem;">
+              "Stand proud. You are strong."
+            </blockquote>
+
+            <p id="char-hero-bio" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+              An ancient sorcerer from a thousand years ago who reigns as the supreme calamity in jujutsu history. Sukuna possesses godlike physical strength, lethal slashing techniques (Cleave & Dismantle), and the devastating Domain Expansion: Malevolent Shrine.
+            </p>
+
+            <!-- Combat Attributes Radar / Bars -->
+            <div class="char-stat-meter">
+              <div class="char-stat-row">
+                <span>Destructive Power</span>
+                <div class="char-stat-track"><div class="char-stat-bar" data-char-stat="power" style="width: 99%;"></div></div>
+                <span class="char-stat-val">99</span>
+              </div>
+              <div class="char-stat-row">
+                <span>Speed & Agility</span>
+                <div class="char-stat-track"><div class="char-stat-bar" data-char-stat="speed" style="width: 96%;"></div></div>
+                <span class="char-stat-val">96</span>
+              </div>
+              <div class="char-stat-row">
+                <span>Cursed / Magical Energy</span>
+                <div class="char-stat-track"><div class="char-stat-bar" data-char-stat="cursedEnergy" style="width: 100%;"></div></div>
+                <span class="char-stat-val">100</span>
+              </div>
+              <div class="char-stat-row">
+                <span>Tactical Intelligence</span>
+                <div class="char-stat-track"><div class="char-stat-bar" data-char-stat="intelligence" style="width: 95%;"></div></div>
+                <span class="char-stat-val">95</span>
+              </div>
+              <div class="char-stat-row">
+                <span>Durability</span>
+                <div class="char-stat-track"><div class="char-stat-bar" data-char-stat="durability" style="width: 98%;"></div></div>
+                <span class="char-stat-val">98</span>
+              </div>
+            </div>
+
+            <!-- Popular Clips / Iconic Moments Carousel -->
+            <div style="margin-top: 2rem;">
+              <div style="font-family: var(--font-display); font-size: 0.9rem; font-weight: 800; color: #FFFFFF; letter-spacing: 1px; margin-bottom: 0.8rem; text-transform: uppercase;">
+                POPULAR CLIPS & KEY MOMENTS
+              </div>
+              <div id="char-clips-wrap" style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem;">
+                <!-- Populated by script.js -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Additional Characters Grid -->
+      <section style="margin-bottom: 4rem;">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <div class="section-indicator"></div>
+            <h2 class="section-title">ALL CHARACTERS IN VAULT</h2>
+          </div>
+        </div>
+
+        <div class="char-showcase-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+          <div class="char-mini-card" style="cursor: pointer;" onclick="document.querySelector('[data-char-select=sukuna]').click()">
+            <img class="char-mini-img" src="assets/images/characters/sukuna.jpg" alt="Ryomen Sukuna">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Ryomen Sukuna</div>
+              <div class="char-mini-role">Jujutsu Kaisen</div>
+            </div>
+          </div>
+          <div class="char-mini-card" style="cursor: pointer;" onclick="document.querySelector('[data-char-select=asta]').click()">
+            <img class="char-mini-img" src="assets/images/characters/asta.svg" alt="Asta">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Asta</div>
+              <div class="char-mini-role">Black Clover</div>
+            </div>
+          </div>
+          <div class="char-mini-card" style="cursor: pointer;" onclick="document.querySelector('[data-char-select=jinwoo]').click()">
+            <img class="char-mini-img" src="assets/images/characters/jinwoo.svg" alt="Sung Jinwoo">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Sung Jinwoo</div>
+              <div class="char-mini-role">Solo Leveling</div>
+            </div>
+          </div>
+          <div class="char-mini-card" style="cursor: pointer;" onclick="document.querySelector('[data-char-select=gojo]').click()">
+            <img class="char-mini-img" src="assets/images/characters/gojo.svg" alt="Satoru Gojo">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Satoru Gojo</div>
+              <div class="char-mini-role">Jujutsu Kaisen</div>
+            </div>
+          </div>
+          <div class="char-mini-card">
+            <img class="char-mini-img" src="assets/images/characters/tanjiro.svg" alt="Tanjiro Kamado">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Tanjiro Kamado</div>
+              <div class="char-mini-role">Demon Slayer</div>
+            </div>
+          </div>
+          <div class="char-mini-card">
+            <img class="char-mini-img" src="assets/images/characters/levi.svg" alt="Levi Ackerman">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Levi Ackerman</div>
+              <div class="char-mini-role">Attack on Titan</div>
+            </div>
+          </div>
+          <div class="char-mini-card">
+            <img class="char-mini-img" src="assets/images/characters/frieren.svg" alt="Frieren">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Frieren</div>
+              <div class="char-mini-role">Frieren: Beyond Journey's End</div>
+            </div>
+          </div>
+          <div class="char-mini-card">
+            <img class="char-mini-img" src="assets/images/characters/denji.svg" alt="Denji">
+            <div class="char-mini-info">
+              <div class="char-mini-name">Denji</div>
+              <div class="char-mini-role">Chainsaw Man</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-symbol">AV</div>
+            <div class="brand-text">
+              <span class="brand-name">ANIMEVERSE</span>
+              <span class="brand-sub">アニメの宇宙</span>
+            </div>
+          </a>
+          <p class="footer-tagline">ENTER A WORLD BEYOND REALITY.</p>
+          <p class="footer-desc">
+            AnimeVerse is a premium anime discovery platform and entertainment directory designed for anime enthusiasts worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Catalog</a></li>
+            <li><a href="trending.html">Trending Anime</a></li>
+            <li><a href="new-releases.html">New Releases</a></li>
+            <li><a href="characters.html">Character Profiles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="genres.html">Browse Genres</a></li>
+            <li><a href="seasons.html">Seasonal Guide</a></li>
+            <li><a href="movies.html">Anime Movies</a></li>
+            <li><a href="watch.html">Watch Hub</a></li>
+            <li><a href="watchlist.html">My Watchlist</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">COMMUNITY & LEGAL</h4>
+          <p class="footer-desc" style="margin-bottom: 0.8rem;">
+            Join our vibrant Telegram community of anime lovers.
+          </p>
+          <a href="https://t.me/animeverszz" target="_blank" rel="noopener noreferrer" class="btn-telegram" style="margin-bottom: 1.25rem;">
+            <span>JOIN TELEGRAM</span>
+          </a>
+          <ul class="footer-links-list" style="font-size: 0.775rem;">
+            <li><a href="about.html">About AnimeVerse</a></li>
+            <li><a href="about.html#legal">Legal & DMCA Disclaimer</a></li>
+            <li><a href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer">Official Crunchyroll Streaming</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024 AnimeVerse. All rights reserved. Enter A World Beyond Reality.</div>
+        <div>AnimeVerse does not host or pirate video files. All streams link to verified official platforms.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

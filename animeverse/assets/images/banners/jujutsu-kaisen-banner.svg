@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+    <defs>
+      <radialGradient id="bRad" cx="70%" cy="30%" r="80%">
+        <stop offset="0%" stop-color="#DC2626" stop-opacity="0.4"/>
+        <stop offset="40%" stop-color="#7C3AED" stop-opacity="0.2"/>
+        <stop offset="100%" stop-color="#08080D"/>
+      </radialGradient>
+      <linearGradient id="vignette" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#08080D" stop-opacity="0.2"/>
+        <stop offset="70%" stop-color="#08080D" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#08080D"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="600" fill="#08080D"/>
+    <rect width="1200" height="600" fill="url(#bRad)"/>
+    <circle cx="850" cy="280" r="240" fill="#DC2626" opacity="0.15" filter="blur(60px)"/>
+    <circle cx="950" cy="220" r="160" fill="#7C3AED" opacity="0.2" filter="blur(40px)"/>
+
+    <!-- Kanji atmospheric text -->
+    <text x="800" y="340" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="140" fill="#DC2626" opacity="0.12">呪術廻戦</text>
+
+    <!-- Overlay dark gradient -->
+    <rect width="1200" height="600" fill="url(#vignette)"/>
+
+    <!-- Title Elements -->
+    <text x="70" y="320" font-family="'Syne', 'Inter', sans-serif" font-weight="900" font-size="64" fill="#FFFFFF" letter-spacing="3">JUJUTSU KAISEN</text>
+    <text x="75" y="370" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#DC2626" letter-spacing="6">CURSES AND SORCERY</text>
+    <line x1="75" y1="395" x2="320" y2="395" stroke="#DC2626" stroke-width="3"/>
+  </svg>
